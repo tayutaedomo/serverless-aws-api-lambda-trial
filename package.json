@@ -4,6 +4,9 @@
   "description": "Try Serverless framework",
   "main": "index.js",
   "scripts": {
+    "start": "sls offline start",
+    "deploy": "sls deploy --stage dev",
+    "deploy:prod": "sls deploy --stage prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tayutaedomo <tayutaedomo@gmail.com>",
