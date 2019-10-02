@@ -1,5 +1,8 @@
 'use strict';
 
+//
+// Refer: https://qiita.com/imura81gt/items/5cf490468f95ce3d100b
+//
 module.exports.app = (event, context, callback) => {
   callback(null, { 
     statusCode: 200, 
