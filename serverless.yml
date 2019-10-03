@@ -21,3 +21,10 @@ functions:
           path: /{any+}
           method: get
 
+  try-post:
+    handler: handlers/try_post.app
+    events:
+      - http:
+          path: /try-post
+          method: post
+
