@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "sls offline start",
-    "deploy": "sls deploy --stage dev",
-    "deploy:prod": "sls deploy --stage prod",
+    "deploy": "sls deploy --stage dev --aws-profile sls_user",
+    "deploy:prod": "sls deploy --stage prod --aws-profile sls_user",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tayutaedomo <tayutaedomo@gmail.com>",
