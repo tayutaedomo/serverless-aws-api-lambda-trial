@@ -15,5 +15,5 @@ module.exports.app = (event, context, callback) => {
       } 
     }
   );
-}
+};
 
