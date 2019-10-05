@@ -1,0 +1,30 @@
+service: serverless-api-lambda-trial
+frameworkVersion: ">=1.29.2 <2.0.0"
+
+plugins:
+- serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  memorySize: 128
+  region: us-east-1
+
+functions:
+  api:
+    handler: handlers/handler.app
+    events:
+      - http:
+          path: /
+          method: get
+      - http:
+          path: /{any+}
+          method: get
+
+  try-post:
+    handler: handlers/try_post.app
+    events:
+      - http:
+          path: /try-post
+          method: post
+
